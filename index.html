@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           
+           
+        }
+        menu{
+            width: 100%;
+            display: flex;
+        }
+        header{
+            width: 100%;
+            display: flex;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        header img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+        header span{
+            height: 100%;
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            line-height: 100px;
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        nav{
+            width: 70%;
+            background-color: aqua;
+            text-align: center;
+            line-height: 100px;
+            background-color:rgb(226, 70, 70) ;
+        }
+        nav ul{
+            list-style-type:none;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
+        }
+        nav li{
+            font-size: 20px;
+            display:inline-block;
+            width: 33%;
+            text-align: center;
+            background-color: rgb(226, 70, 70);
+            color: white;
+        }
+        nav li:hover{
+            background-color: white;
+            color: black;
+        }
+        main{
+            width: 100%;
+            height: 450px;
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        main aside{
+            width: 30%;
+            height: 100%;
+            background-color:white;
+            text-align: center;
+        }
+        #php{
+            width: 80%;
+           
+        }
+        #h1Aside{
+            width: 100%;
+            font-size: 16px;
+            padding: 20px 0px;
+            border-bottom:2px solid red ;
+            margin-bottom: 10px;
+            text-align: center;
+            
+        }
+        .contact-box a{
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            position: none;
+            text-align: center;
+        }
+        .contact-box img{
+            width: 40px;
+            height: 40px;
+            border-bottom: 2px solid red;
+            padding-bottom: 10px;
+            
+        }
+        .contact-box img:hover{
+            width: 50px;
+            height: 50px;
+            border-bottom: 2px solid black;
+        }
+        #art1{
+            position: relative;
+            width: 70%;
+            height: 100%;
+            background-color: red;
+            animation: chnage 10s infinite;
+        }
+        @keyframes chnage{
+            0%{
+                background-color: blue;
+            }
+            30%{
+                background-color: blanchedalmond;
+            }
+            60%{
+                background-color: blueviolet;
+            }
+            90%{
+                background-color: yellow;
+            }
+        }
+        #content{
+            text-align: center;
+            padding: 20px;
+            width: 35%;
+            height: 45%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+        }
+        #content h1{
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid red;
+        }
+        #content div{
+            margin-top: 40px;
+        }
+        .courses{
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content:center ;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .courses img{
+            width: 500px;
+            margin: 0 10px;
+        }
+    
+        @media only screen and (max-width: 801px){
+            header{
+                display: block;
+                height: auto;
+                
+            }
+            #spanheader{
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+            #spanheader a{
+                display: block;
+            }
+            nav{
+                width: 100%;
+            }
+            main{
+                display: block;
+            }
+            main aside{
+                width: 100%;
+                
+            }
+            #art1{
+                width: 100%;
+            }
+            .courses {
+                display: block;
+                text-align: center;
+            }
+            .courses img {
+                width: 300px;
+            }
+
+            
+        }
+    </style>
+</head>
+<body dir="rtl">
+        <header>
+            <span id="spanheader">
+                <a href="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdplP1sfVmwdZz70uEzJpVBFV9dfAwyR1Dw&usqp=CAU" >
+                </a>
+                <a href="" style="text-decoration: none;color: black;">Taher Mbarki</a>
+            </span>
+            <nav>
+                <ul>
+                    <li>القوائم التشغيل</li>
+                    <li>الفيديوهات</li>
+                    <li>الصفحة الرئيسية</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="art1" >
+                <div id="content">
+                    <h1>Taher Mbarki</h1>
+                    <div>taher mbarki html css javascript</div>
+                </div>
+            </article>
+            <aside  >
+                <a href="">
+                    <img id="php" src="https://i.ytimg.com/vi/wCZ5TJCBWMg/maxresdefault.jpg">
+                </a>
+                <h1 id="h1Aside">تعلم PHP بالإحترافية مجانا الأن</h1>
+                <div class="contact-box">
+                    <a href="">
+                        <img src="https://shiyarjemo.com/blog/img/facebook.png" >
+                    </a>
+                    <a href="">
+                        <img src="https://shiyarjemo.com/blog/img/map.png" >
+                    </a>
+                    <a href="">
+                        <img src="https://shiyarjemo.com/blog/img/twitter.png">
+                    </a>
+                    <a href="">
+                        <img src="https://shiyarjemo.com/blog/img/youtube.png" >
+                    </a>
+                </div>
+            </aside>
+            <article class="courses">
+                <a href="https://blog.codershiyar.com/search/label/html" target="_blank"> <img src="http://shiyarjemo.com/blog/img/html.jpg"></a>
+                <a href="https://blog.codershiyar.com/search/label/css" target="_blank"><img src="http://shiyarjemo.com/blog/img/css2.jpg"> </a>
+                <a href="https://blog.codershiyar.com/search/label/javascript" target="_blank"><img src="http://shiyarjemo.com/blog/img/javascript.png"> </a>
+            </article>
+            <article class="courses">
+                <a href="https://blog.codershiyar.com/search/label/bootstrap" target="_blank"><img src="http://shiyarjemo.com/blog/img/bootstrap.png"> </a>
+                <a href="https://blog.codershiyar.com/2020/02/java" target="_blank"><img src="http://shiyarjemo.com/blog/img/java.jpg"> </a>
+                <a href="https://blog.codershiyar.com/search/label/android" target="_blank"><img src="http://shiyarjemo.com/blog/img/android.jpg"> </a>
+            </article>
+            
+        </main>
+        
+    
+</body>
+</html>
